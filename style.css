@@ -30,6 +30,7 @@
 #article-title {
   border-radius: 20px;
   border: 1px solid #ccc;
+  margin-bottom: 1.4rem;
 }
 #article-content {
   border: 1px solid #ccc;

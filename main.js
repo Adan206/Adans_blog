@@ -46,6 +46,8 @@ const createArticle = (event) => {
     newCard.remove();
   });
 
+  localStorage.setItem("name");
+
   //set the value of the inputs to empty after submit
   titleInput.value = "";
   contentInput.value = "";
