@@ -45,4 +45,8 @@ const createArticle = (event) => {
   xdelete.addEventListener("click", function () {
     newCard.remove();
   });
+
+  //set the value of the inputs to empty after submit
+  titleInput.value = "";
+  contentInput.value = "";
 };
