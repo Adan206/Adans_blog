@@ -5,7 +5,8 @@ const createArticle = (event) => {
 
   const titleInput = document.querySelector("#article-title");
   const contentInput = document.querySelector("#article-content");
-  const articleSection = document.querySelector("#article-section");
+  const article = document.querySelector("article");
+  // const articleSection = document.querySelector("#article-section");
 
   //the following elements p, div, h5 tags are created with new variables.
 
@@ -21,7 +22,8 @@ const createArticle = (event) => {
   newCardBody.append(deleteX);
   newCardBody.append(cardHeading);
   newCardBody.append(cardText);
-  articleSection.append(newCard);
+  article.append(newCard);
+  // articleSection.append(newCard);
 
   //bootstrap classes are needed for style
 
@@ -43,10 +45,13 @@ const createArticle = (event) => {
   const xdelete = document.querySelector(".deletecard");
 
   xdelete.addEventListener("click", function () {
-    newCard.remove();
-  });
+    article.removeChild(newCard);
 
-  localStorage.setItem("name");
+    // function remove_country() {
+    //   var select = document.getElementById("DIV_country");
+    //   select.removeChild(select.lastChild);
+    // }
+  });
 
   //set the value of the inputs to empty after submit
   titleInput.value = "";
