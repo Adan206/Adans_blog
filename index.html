@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/df552b402a.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog Is A Thing</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <!-- Navbar content -->
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >Blogathon <i class="fa fa-pencil" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+    <section class="bgimage">
+      <div class="container-fluid">
+        <!-- <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h5>Hello, world! Full width Hero-unit header</h5>
+            <p>
+              This is a template for a simple marketing or informational
+              website. It includes a large callout called the hero unit and
+              three supporting pieces of content. Use it as a starting point to
+              create something more unique.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary btn-large">Learn more »</a>
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="article-section">
+        <!-- <div class="card mb-3 mt-4 text-center bg-light">
+          <div class="card-body">
+            <div class="deletecard">X</div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas commodi obcaecati vitae fugiat fuga provident similique
+              id necessitatibus, eaque nobis quod culpa cum ratione in eveniet
+              cumque impedit optio laborum, repellendus suscipit! Quas, maiores
+              et architecto at repudiandae dignissimos, enim mollitia, soluta
+              non recusandae asperiores perspiciatis quos quam voluptates
+              voluptatem.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div> -->
+      </section>
+    </div>
+    <div class="container">
+      <section id="forms-section">
+        <form onsubmit="createArticle(event)" id="forms">
+          <label for="article-title" class="text-uppercase" id="labels"
+            >Title of article</label
+          >
+          <input type="text" id="article-title" name="article-title" />
+
+          <label for="article-content" class="text-uppercase"
+            >Article content</label
+          >
+          <textarea
+            name="article-content"
+            id="article-content"
+            cols="15"
+            rows="6"
+          ></textarea>
+          <!-- <input
+            type="submit"
+            value="submit"
+            class="btn btn-primary mt-2 mb-4"
+          /> -->
+          <div class="d-grid gap-2 col-6 mx-auto mb-4 mt-2">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <span class="text-light">Copyright: Adans Blog</span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
