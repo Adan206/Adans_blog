@@ -72,35 +72,39 @@
     </div>
     <div class="container">
       <section id="forms-section">
-        <form onsubmit="createArticle(event)" id="forms">
-          <label for="article-title" class="text-uppercase" id="labels"
-            >Title of article</label
-          >
-          <input
-            type="text"
-            id="article-title"
-            name="article-title"
-            autocomplete="off"
-          />
+        <div class="card bg-light mb-4">
+          <div class="card-body">
+            <form onsubmit="createArticle(event)" id="forms">
+              <label for="article-title" class="text-uppercase" id="labels"
+                >Title of article</label
+              >
+              <input
+                type="text"
+                id="article-title"
+                name="article-title"
+                autocomplete="off"
+              />
 
-          <label for="article-content" class="text-uppercase"
-            >Article content</label
-          >
-          <textarea
-            name="article-content"
-            id="article-content"
-            cols="15"
-            rows="6"
-          ></textarea>
-          <!-- <input
+              <label for="article-content" class="text-uppercase"
+                >Article content</label
+              >
+              <textarea
+                name="article-content"
+                id="article-content"
+                cols="15"
+                rows="6"
+              ></textarea>
+              <!-- <input
             type="submit"
             value="submit"
             class="btn btn-primary mt-2 mb-4"
           /> -->
-          <div class="d-grid gap-2 col-6 mx-auto mb-4 mt-2">
-            <button class="btn btn-primary" type="submit">Submit</button>
+              <div class="d-grid gap-2 col-6 mx-auto mb-4 mt-2">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </section>
     </div>
     <footer class="footer mt-auto py-3 bg-dark">
