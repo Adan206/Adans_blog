@@ -1,20 +1,32 @@
+const titleInput = document.querySelector("#article-title");
+const contentInput = document.querySelector("#article-content");
+const articleSection = document.querySelector("#article-section");
+
+//
+
 const createArticle = (event) => {
   event.preventDefault();
 
   // create variables for the title, text-area inputs and the section
 
-  const titleInput = document.querySelector("#article-title");
-  const contentInput = document.querySelector("#article-content");
-  const article = document.querySelector("article");
+  // const titleInput = document.querySelector("#article-title");
+  // const contentInput = document.querySelector("#article-content");
+  // const articleSection = document.querySelector("#article-section");
+
   // const articleSection = document.querySelector("#article-section");
 
   //the following elements p, div, h5 tags are created with new variables.
 
+  const article = document.createElement("ARTICLE");
   const newCard = document.createElement("DIV");
   const newCardBody = document.createElement("DIV");
   const deleteX = document.createElement("DIV");
   const cardHeading = document.createElement("H5");
   const cardText = document.createElement("P");
+
+  //create list element
+  // const li = document.createElement("LI");
+  // const ul = document.createElement("UL");
 
   // the variables are now inserted in to the parents div according to bootstrap class
 
@@ -23,7 +35,9 @@ const createArticle = (event) => {
   newCardBody.append(cardHeading);
   newCardBody.append(cardText);
   article.append(newCard);
-  // articleSection.append(newCard);
+  articleSection.append(article);
+
+  //appending and deleting list
 
   //bootstrap classes are needed for style
 
@@ -42,16 +56,16 @@ const createArticle = (event) => {
 
   // following click event listener will delete blog card from page.
 
-  const xdelete = document.querySelector(".deletecard");
-
-  xdelete.addEventListener("click", function () {
-    article.removeChild(newCard);
-
-    // function remove_country() {
-    //   var select = document.getElementById("DIV_country");
-    //   select.removeChild(select.lastChild);
-    // }
+  articleSection.addEventListener("click", function (e) {
+    if (e.target.classList.contains("deletecard")) {
+      e.target.parentElement.parentElement.parentElement.remove();
+    }
   });
+
+  //validation
+  // if (titleInput.value === "" && contentInput.value === "") {
+  //   alert("hey you must fill out both input feilds");
+  // }
 
   //set the value of the inputs to empty after submit
   titleInput.value = "";
